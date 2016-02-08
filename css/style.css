@@ -1,0 +1,254 @@
+/*-------------------------------------------------------*/
+/* Preloader
+/*-------------------------------------------------------*/
+body{
+	font-family: 'Roboto', sans-serif;
+	padding:0px;
+	margin:0px;
+	/*font-weight:300;*/
+}
+#preloader {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:#fff; /* change if the mask should have another color then white */
+  z-index:99999; /* makes sure it stays on top */
+}
+
+#status {
+  width:200px;
+  height:200px;
+  position:absolute;
+  left:50%; /* centers the loading animation horizontally one the screen */
+  top:50%; /* centers the loading animation vertically one the screen */
+  background-image:url(../upload/preloader.gif); /* path to your loading animation */
+  background-repeat:no-repeat;
+  background-position:center;
+  margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+.page-title {
+  background: url(../upload/blog_title_bg.jpg) no-repeat fixed;
+  position: relative;
+  background-position: 50% 0%;
+  max-height:100%;
+  margin-top:0;
+}
+
+.page-title .container {
+  height: 100%;
+}
+canvas#spiders {
+  width:100%;
+  max-height:100%;
+  /*background-color:*/
+}
+/*-------------------------------------------------------*/
+/* Navigation
+/*-------------------------------------------------------*/
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  width: 100%;
+  height: 70px;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.logo-light {
+  float: left;
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  display: table-cell;
+  vertical-align: middle;
+  height: 70px;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.main-nav.sticky {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(63,81,181,1);
+}
+
+.main-nav.sticky .logo {
+  height: 70px;
+}
+h1.main-title {
+  position: relative;
+  margin-top: -350px;
+  font-size: 5vw !important;
+  color: #fff;
+  font-weight: 600;
+}
+h1.main-title span {font-size: 3vw;}
+.clearfix { *zoom: 1; }
+.clearfix:before, .clearfix:after { display: table; line-height: 0; content: ""; }
+.clearfix:after { clear: both; }
+.clear { clear: both; }
+
+.oh { overflow: hidden; }
+.relative { position: relative; }
+.section-wrap { padding: 30px 0; }
+.color-white { color: #fff !important; }
+.left { float: left; }
+.right { float: right; }
+.bg-light { background-color: #fafafa; }
+.bg-color { background-color: #3f51b5; }
+
+::-moz-selection { color: #fff; background: #3f51b5; }
+::-webkit-selection { color: #fff; background: #3f51b5; }
+::selection { color: #fff; background: #3f51b5; }
+
+.transition {
+  -webkit-transition: all 0.25s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+  -moz-transition: all 0.25s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+  -o-transition: all 0.25s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+  -ms-transition: all 0.25s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+  transition: all 0.25s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+.navbar-nav > li > a{
+	font-weight:400;
+	color:white;
+}
+.navbar-brand {
+	font-size:25px;
+
+
+}
+.navbar-nav > li > a, .navbar-brand {
+	padding-left:0 25px;
+
+}
+
+.navbar {
+	border-bottom:2px solid #1DB755
+}
+
+.nav-collapse2{
+	padding-top:10px;
+}
+.navbar-right > li {
+	padding-left:4px;
+	
+}
+.navbar-left{
+	padding-left:100px;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+}
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar,.navbar-default{
+	margin:0;
+}
+.home-content,.developer-area{
+	padding:50px 0;
+	min-height:200px;
+	
+}
+.panel_heading{
+	background-color:#F5F5F5;
+	border:1px solid #E8E8FF;
+	padding:15px 10px;
+
+	margin-bottom:0px;
+	
+}
+.list-group-item{
+	 color:#3E3F3A;
+	 font-size:16px;
+}
+.list-group a{
+	 text-decoration: none;
+}
+.list-group-item p{
+	 font-weight: 100;
+	 color:#656561;
+	 font-size:14px;
+}
+.list-group-item:hover{
+	background-color:#F5F5F5;
+}
+.boost_heading{
+	text-align:center;
+	font-weight:300;
+	margin-bottom:5px;
+	color:#899B9F;
+}
+.bottom_border{
+	border-bottom:2px solid #1DB755;
+	max-width:270px;
+	margin:0 auto;
+	margin-bottom:20px;
+}
+.developer-area{
+	padding:50px 0;
+	min-height:200px;
+	background-color:#F6F8F8;
+	color:#899B9F;
+}
+.box_shadow{
+	border-bottom: 0 none;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+	background-color:white;
+	
+}
+.footer-area{
+	background-color:#39424E;
+	min-height:60px;
+	color:white;
+	line-height:60px;
+}
+.navbar-inverse .navbar-brand {
+    color: white;
+	font-weight: bold;
+}
+.default-border{
+	    border: 1px solid #ddd;
+		color: #505055;
+	padding:5px 10px;
+	background-color:#F2F2F2
+}
+.padding_top{
+	margin-top:20px;
+}
+.padding_top a{
+	color:#575757;
+}
+.padding_top a:hover{
+	text-decoration:none;
+}
+.homepage-background{
+	background-color:#F2F2F2;
+	border-radius:10px;
+	padding:100px 0;
+}
+.my_contest1{
+	border:1px solid #F2F2F2;
+	padding:10px;
+}
+.pad-bot{
+	padding-top:50px;
+}
+
+
+
+
